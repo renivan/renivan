@@ -1,0 +1,48 @@
+
+
+.container-fluid {
+    margin-top: 50px;
+    max-width: 100%;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.invalid-feedback {
+    display: none;
+    color: rgb(0, 0, 0);
+    font-size: 0.8rem;
+}
+
+input:invalid {
+    border-color: rgb(0, 0, 0);
+}
+
+input:invalid + .invalid-feedback {
+    display: block;
+}
+
+#resultado {
+    text-align: center;
+    font-weight: bold;
+}
+
+@keyframes colorAnimation {
+    0% { background-color: rgba(145, 89, 43, 0.884); }
+    25% { background-color: rgba(168, 168, 79, 0.658); }
+    50% { background-color: rgba(0, 0, 255, 0.644); }
+    75% { background-color: rgba(0, 128, 0, 0.712); }
+    100% { background-color: rgb(168, 87, 87); }
+}
+
+body {
+    margin: 0% auto;
+    width: 600px;
+    height: 200px;
+    animation: colorAnimation 100s linear infinite;
+}
+
+.custom-class {
+  display: none;
+}
